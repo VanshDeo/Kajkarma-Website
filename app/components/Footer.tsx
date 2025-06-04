@@ -1,6 +1,12 @@
 // components/Footer.tsx
 import { div } from "framer-motion/client";
 import Image from "next/image";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
 
 const Footer = () => {
   // export interface FooterProps {
@@ -39,7 +45,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="relative z-0">
+    <div className={`relative z-0 ${inter.className}`}>
         
     <footer className="bg-gray-900 text-white p-10 mt-12">
     <div
